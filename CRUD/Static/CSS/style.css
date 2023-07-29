@@ -1,0 +1,88 @@
+
+*,*::after,*::before{
+    margin: 0;padding: 0;
+    box-sizing:border-box;
+}
+#main{ 
+    padding: 5%;
+    /* padding-bottom: 0; */
+    position: absolute;
+    width: 100vw;
+    z-index: -1;
+    left: 0;
+    transition: all .5s ease-in-out;
+}
+
+.toggle_button{
+    position: absolute;
+    left: 92.5%;
+    top: 3%;
+    padding: .5em;
+    border: none;
+}
+
+#cont{
+    position: fixed;
+    left: -25vw;
+    top: 0;
+    width: 25vw;
+    height: 100vh;
+    background-color: rgb(155, 101, 205);
+    padding-top: 2%;
+    transition: .5s;
+}
+
+#heading{
+    /* position: absolute; */
+    font-size: 4em;
+}
+
+#sidebar{
+    /* position: relative; */
+    padding: 0;
+
+}
+
+#sidebar li{
+    list-style: none;
+    margin-bottom: 1em;
+    /* text-align: center; */
+    padding-left: 10%;
+    transition: .1s;
+}
+
+
+#sidebar a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    transition: .1s;
+}
+#sidebar li:hover{
+    background-color: white;
+    border-radius: 1em;
+}
+
+#sidebar li:hover a{
+   color: #2B2A2F;
+
+}
+
+#cont.active{
+   left: 0;
+}
+
+#main.half{
+    left: 25vw;
+    right: 0;
+    width: 75vw;
+    padding: 3%;
+    
+}
+
+.btn:hover{
+    outline: 2px solid  rgb(155, 101, 205);
+    outline-offset: 3px;
+    transform: scale(0.8);
+}
